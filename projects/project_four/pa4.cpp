@@ -194,7 +194,7 @@ typedef pair<double,Node> pin;
 void dijkstra(Node source, Node dest)
 {
     dist[source] = 0;
-    priority_queue<pin, vector<pin>, greater<pin>> to_visit; 
+    priority_queue<pin, vector<pin>, greater<pin> > to_visit; 
     to_visit.push(make_pair(0, source));
     while (!to_visit.empty()) {
         Node x = to_visit.top().second;
